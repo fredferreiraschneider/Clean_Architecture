@@ -32,7 +32,6 @@ describe("Test create product use case", () => {
     await productRepository.create(product);
 
     const input ={
-        type: "a",
         name: "product a",
         price: 100    
     }

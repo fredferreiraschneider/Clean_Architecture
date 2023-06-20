@@ -13,7 +13,7 @@ export class CreateProductUseCase{
     async execute (
         input: InputCreateProductDto
     ): Promise<OutputCreateProductDto>{
-        const productFactory = ProductFactory.create(input.type, input.name, input.price);
+        const productFactory = ProductFactory.create("a", input.name, input.price);
 
         const product = new Product(productFactory.id, productFactory.name, productFactory.price);
 
